@@ -1,0 +1,373 @@
+/* #################### Social items Section ####################*/
+
+body {
+  font-family: "Merienda", cursive;
+  color: whitesmoke;
+  background: url(../images/barzinho2.jpg) center/cover fixed no-repeat;
+}
+
+/*.col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /*will wrap the items on the screen, once there's no space for both of them*/
+/*align-items: baseline;  items get align, one isn't gonna get higher or lower than the other*/
+/*}*/
+
+.container-fluid {
+  padding-top: 2px;
+}
+
+.info {
+  background: #1a181b;
+}
+
+.primary-color {
+  color: #f2c14e;
+}
+
+.info h2 {
+  word-spacing: 0.6rem;
+}
+
+/*#################### Header Section ####################*/
+
+#header {
+  min-height: calc(100vh - 94px); /* 100 view heights, takes up the whole page*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/dog4.jpg);
+  background-attachment: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+  border-top: 8px double #232023;
+  border-bottom: 8px double #232023;
+  animation: fromLeft;
+  animation-duration: 4s;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px); /* slide it -100px to the left*/
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-btn {
+  color: #f2c14e;
+  font-size: 2rem;
+  border: 4px solid #232023;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-btn:hover {
+  color: #232023;
+  border: 4px solid #232023;
+  background: #f2c14e;
+  opacity: 1;
+}
+
+.button-anim {
+  animation: fromRight;
+  animation-duration: 4s;
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100px); /* slide it -100px to the left*/
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: #232023;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+  animation: fromBottom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.header-link {
+  /* arrow*/
+  color: #f2c14e;
+}
+
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* menu items*/
+.item-container {
+  position: relative;
+  /*for the link*/
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 2s ease;
+}
+
+.item-img {
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2c14e;
+  font-size: 2rem;
+  border-top: 3px solid #f2c14e;
+  border-bottom: 3px solid #f2c14e;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+}
+
+.item-link:hover {
+  border: 3px solid #f2c14e;
+  background: #f2c14e;
+  color: #1a181b;
+}
+
+.item-container:hover {
+  outline: 10px solid #f2c14e;
+  outline-offset: 0.8rem;
+}
+
+/*####################### MENU ###################*/
+
+#menu {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/menu2.jpg) center/cover fixed no-repeat;
+}
+
+.menu h1 {
+  color: #f2c14e;
+}
+.special {
+  border: 3px solid #f2c14e;
+  position: relative;
+}
+
+.special-text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: #f2c14e;
+  padding: 0 0.4rem;
+}
+
+.down-btn {
+  color: #f2c14e;
+  font-size: 1.5rem;
+  border: 4px solid #232023;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 10px;
+}
+
+.down-btn:hover {
+  color: #232023;
+  border: 4px solid #232023;
+  background: #f2c14e;
+  opacity: 1;
+}
+
+/*####################Contact#################*/
+
+.height-60 {
+  min-height: 60vh;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: #f2c14e;
+}
+
+#contact .input-group-text {
+  background: #f2c14e;
+  border-color: #f2c14e;
+  color: #1a181b;
+}
+
+#contact .card input {
+  color: #606060;
+}
+
+#contact .card input::placeholder {
+  color: #606060;
+}
+
+.contact-btn {
+  color: #f2c14e;
+  border-color: #f2c14e;
+  background: transparent;
+  transition: all 1s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #f2c14e;
+  color: #1a181b;
+  border-color: #1a181b;
+}
+
+/*footer*/
+.page-footer {
+  background-color: #1a181b;
+}
+
+.container-footer {
+  background-color: #f2c14e;
+}
+
+.mb-0 {
+  color: #1a181b;
+}
+
+.ins-ic {
+  color: #f2c14e;
+}
+
+.ins-ic:hover {
+  color: #f2c14e;
+  opacity: 0.6;
+}
+
+.fb-ic {
+  color: #f2c14e;
+}
+
+.fb-ic:hover {
+  color: #f2c14e;
+  opacity: 0.6;
+}
+
+.fa-utensils {
+  color: #1a181b;
+}
+
+/*NAVBAR*/
+.nav-btn {
+  color: #f2c14e;
+  font-size: 1.5rem;
+  border: 4px solid #232023;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+  color: #232023;
+  border: 4px solid #232023;
+  background: #f2c14e;
+  opacity: 1;
+}
+.navbar {
+  background: #1a181b;
+  padding: 20px 20px;
+  transition: all 1s ease;
+}
+
+.navbar-background {
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: #f2c14e;
+}
+
+.navbar-brand:hover {
+  color: #f2c14e;
+  opacity: 0.6;
+  font-size: 33px;
+}
+
+.nav-link {
+  color: #f2c14e;
+  text-decoration: none;
+  transition: all 1s ease;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  color: #f2c14e;
+  opacity: 0.6;
+  font-size: 30px;
+}
+
+.toggler-btn {
+  border: 2px solid #f2c14e;
+  padding: 5px;
+  transition: all 1s ease;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #f2c14e;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+/* clock*/
